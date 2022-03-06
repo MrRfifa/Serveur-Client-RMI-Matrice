@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.scene0Controller">
+   <children>
+      <Button fx:id="button0" layoutX="208.0" layoutY="178.0" mnemonicParsing="false" onAction="#connect" text="Ouvrir le serveur" textFill="#030101">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="241.0" layoutY="50.0" text="WELCOME" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" layoutX="155.0" layoutY="337.0" opacity="0.0" prefHeight="31.0" prefWidth="289.0" text="connection établie avec succés" textAlignment="CENTER" textFill="#ec1818">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="763.0" prefWidth="998.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.scene0Controller">
+   <children>
+      <Label fx:id="lab" alignment="CENTER" contentDisplay="CENTER" layoutX="223.0" layoutY="22.0" text="WELCOME">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn" layoutX="41.0" layoutY="447.0" mnemonicParsing="false" onAction="#calcul" text="calculer" />
+      <Button fx:id="conf1" layoutX="476.0" layoutY="183.0" mnemonicParsing="false" onAction="#conf_mat_1" text="voir la matrice" />
+      <Button fx:id="conf2" layoutX="476.0" layoutY="386.0" mnemonicParsing="false" onAction="#conf_mat_2" text="voir la matrice" />
+      <TextField fx:id="txt1" layoutX="14.0" layoutY="183.0" prefHeight="26.0" prefWidth="436.0" promptText="1 2 3 4 5 6 7 8 9 ..." />
+      <TextField fx:id="txt2" layoutX="14.0" layoutY="385.0" prefHeight="26.0" prefWidth="436.0" promptText="1 2 3 4 5 6 7 8 9 ..." />
+      <TextField fx:id="lig1" layoutX="98.0" layoutY="122.0" prefHeight="26.0" prefWidth="34.0" promptText="lig" />
+      <TextField fx:id="col1" layoutX="188.0" layoutY="122.0" prefHeight="26.0" prefWidth="34.0" promptText="col" />
+      <TextField fx:id="col2" layoutX="188.0" layoutY="325.0" prefHeight="26.0" prefWidth="34.0" promptText="col" />
+      <TextArea fx:id="mat_txt1" editable="false" layoutX="715.0" layoutY="122.0" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="true" opacity="0.37" prefHeight="148.0" prefWidth="191.0" style="-fx-padding: 15;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="mat_txt2" editable="false" layoutX="715.0" layoutY="312.0" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="true" opacity="0.37" prefHeight="148.0" prefWidth="191.0" style="-fx-padding: 15;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="mat_res" editable="false" layoutX="711.0" layoutY="506.0" opacity="0.0" prefHeight="200.0" prefWidth="200.0" style="-fx-padding: 25;">
+         <font>
+            <Font size="15.0" />
+         </font></TextArea>
+      <Label fx:id="label_res" layoutX="87.0" layoutY="573.0" opacity="0.0" prefHeight="66.0" prefWidth="290.0" text="La matrice résultante   :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lig2" layoutX="98.0" layoutY="325.0" prefHeight="26.0" prefWidth="34.0" promptText="lig" />
+      <Button fx:id="reset" layoutX="242.0" layoutY="447.0" mnemonicParsing="false" onAction="#reset" prefHeight="26.0" prefWidth="57.0" text="reset" />
+   </children>
+</AnchorPane>
